@@ -10,8 +10,9 @@
 6.	Configure the storage account for static site hosting.
 7.	Wait for your storage account to finish being created. When viewing the resource group, you can click Refresh. When your storage account appears in the list, it has been created.
 
-**Static Website
-**
+**Static Website**
+
+
 8.	Click on your storage account, then click Static Website on the left side of the storage account pane.
 9.	Click Enabled to enable static website hosting for the storage account.
 10.	For Index document name, enter index.html.
