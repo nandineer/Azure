@@ -17,5 +17,18 @@
 9.	Click Enabled to enable static website hosting for the storage account.
 10.	For Index document name, enter index.html.
 11.	Click Save.
-12.	Upload the static site files.
-13.	In Azure portal, navigate back to the static site storage account and select Static Website again. This page contains a URL under Primary Endpoint. Copy this URL and access it in a new tab.
+12.	Upload the static site files - through portal or through cloud shell using command
+
+    export AZURE_STORAGE_ACCOUNT=<<storage-account_name>>
+    export RESOURCE_GROUP=<<resource_group>>
+    az storage account keys list \
+      --account-name $AZURE_STORAGE_ACCOUNT \
+      --resource-group $RESOURCE_GROUP \
+      --output table
+
+     git clone <<git url>>
+   	
+     az storage blob upload-batch -s . -d "\$web" --account-name <storage-account-name> --account-key <storage-account-key>
+
+     
+14.	In Azure portal, navigate back to the static site storage account and select Static Website again. This page contains a URL under Primary Endpoint. Copy this URL and access it in a new tab.
