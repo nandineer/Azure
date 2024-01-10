@@ -26,7 +26,7 @@
       --resource-group $RESOURCE_GROUP \
       --output table
 
-     git clone 
+     git clone https://github.com/nandineer/Azure_Host_StaticWebsite.git
    	
      az storage blob upload-batch -s . -d "\$web" --account-name <storage-account-name> --account-key <storage-account-key>
 
