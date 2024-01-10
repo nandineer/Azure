@@ -26,7 +26,7 @@
       --resource-group $RESOURCE_GROUP \
       --output table
 
-     git clone <<git url>>
+     git clone 
    	
      az storage blob upload-batch -s . -d "\$web" --account-name <storage-account-name> --account-key <storage-account-key>
 
